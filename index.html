@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<link>
+<meta charset="UTF-8"/>
+<title>canvas签章</title>
+<script src="./FXQ.js"></script>
+
+
+</head>
+<body>
+<div style="text-align:left;border-style:outset;border-width:15px;width:420px;padding-top:50px;
+	padding-left:20px;padding-bottom:40px">
+		<p style="font-size:40px">强 盛 集 团 奖 励 券</p>
+		<p style="font-size:80px;margin-left:80px">30 元</p>
+		<p style="font-size:20px;margin-left:200px">请亲友配合 予以兑现</p>
+    <img style="position:absolute;left:150px;top:220px" id="img"/>
+</div>
+
+<script type="text/javascript">
+    //var base64 = FXQ.companySeal('浙江葫芦娃网络集团有限公司',0,0,0,'2018-12-19')
+    var base64 = FXQ.companySeal('京海市强盛集团',0,0,0,'高启强 高启盛')
+    //var base64 = FXQ.companyEllipse('某某某网络集团有限公司','1234567899876',0,0)
+    //var base64 = FXQ.personal("李易峰",0,0,0,0);
+    //FXQ.personal("赵丽颖",0,0,0,1);
+    //var base64 = FXQ.personal("易烊千玺",1,1,1,0);
+    //FXQ.personal("王源",0,1,1,0);
+    //var base64 = FXQ.personal("李易峰",0,1,1,0);
+    //FXQ.personal("王俊凯",0,1,1,1);
+    document.getElementById('img').src=base64;
+</script>
+</body>
+</html>
